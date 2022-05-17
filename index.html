@@ -15,27 +15,36 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
+    <header class="header-container">
+      <img
+        src="https://mir-s3-cdn-cf.behance.net/user/115/2defaa1106508579.616ee56f218fe.jpg"
+        alt="Foto de perfil"
+        class="description--profile-image"
+      />
+      <a href="" class="header--nav-icon"></a>
+      <nav class="header--nav-container">
+        <ul class="nav-menu">
           <li><a href="./contact.html">Contact</a></li>
           <li><a href="./blog.html">Blog</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/about.html">About me</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./about.html">About me</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="main-description-container">
-        <img
-          src="https://mir-s3-cdn-cf.behance.net/user/115/2defaa1106508579.616ee56f218fe.jpg"
-          alt="Foto de perfil"
-          class="description--profile-image"
-        />
-        <div class="description-detail">
+      <section class="description-container">
+        <div class="description--text-details">
+          <p>{Hola Soy}</p>
           <h1>Santiago Giler Paz</h1>
-          <h3>Ingeniero en sistemas</h3>
-          <p>Desarrollador web: bla bla bla bla bla bla bla bla bla bla</p>
+          <h1>Desarrollador web frontend</h1>
+        </div>
+        <div class="social-container">
+          <div class="social-container--img"></div>
+          <div class="social-container--icons">
+            <a href="" class="icon icon__linkedin"><span></span></a>
+            <a href="" class="icon icon__twitter"><span></span></a>
+            <a href="" class="icon icon__github"></a>
+          </div>
         </div>
       </section>
     </main>

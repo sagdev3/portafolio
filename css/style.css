@@ -1,7 +1,117 @@
+:root {
+  --white-gray: #fafafa;
+  --blue-white: #e8f1f5;
+  --primary-blue: #005691;
+  --dark-blue: #004a7c;
+  --primary--red: #fc636b;
+}
 * {
   margin: 0;
   padding: 0;
 }
-.profile-image {
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
+.header--nav-container {
+  display: none;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.header--nav-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url('/assets/icons/bars-solid.svg');
+}
+.description--profile-image {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
+}
+main {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.description-container {
+  position: relative;
+  width: 80%;
+  height: 450px;
+  margin: 60px auto 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.description--text-details {
+  position: relative;
+  height: 270px;
+  max-width: 300px;
+  z-index: 2;
+}
+.description--text-details p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+.description--text-details h1 {
+  font-size: 2.6rem;
+  line-height: 5.8rem;
+}
+.social-container {
+  position: relative;
+  z-index: 0;
+  top: -150px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.social-container--img {
+  width: 285px;
+  height: 300px;
+  background-image: url('https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.social-container--icons {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.icon__linkedin {
+  background-image: url('/assets/icons/linkedin-brands.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon__twitter {
+  background-image: url('/assets/icons/twitter-square-brands.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon__github {
+  background-image: url('/assets/icons/github-brands.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
