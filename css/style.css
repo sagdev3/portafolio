@@ -98,6 +98,7 @@ main {
   background-color: var(--primary--red);
   color: var(--blue-white);
 }
+
 .social-container {
   position: relative;
   z-index: 0;
