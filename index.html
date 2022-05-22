@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta author="author" content="Santiago Giler" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
     <title>Portafolio: Santiago Giler Paz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/desktop-main.css"
+      media="(min-width:950px)"
+    />
   </head>
   <body>
     <header class="header-container">
@@ -21,22 +31,47 @@
         alt="Foto de perfil"
         class="description--profile-image"
       />
-      <a href="" class="header--nav-icon"></a>
-      <nav class="header--nav-container">
-        <ul class="nav-menu">
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./about.html">About me</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <section class="description-container">
         <div class="description--text-details">
-          <p>{Hola Soy}</p>
+          <p>{Hola, Soy}</p>
           <h1>Santiago Giler Paz</h1>
-          <h1>Desarrollador web frontend</h1>
+          <h2>Desarrollador web frontend</h2>
+          <a href="/projects.html" class="btn btn-outline-primary"
+            >Ver Proyectos</a
+          >
         </div>
         <div class="social-container">
           <div class="social-container--img"></div>
@@ -48,5 +83,7 @@
         </div>
       </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
